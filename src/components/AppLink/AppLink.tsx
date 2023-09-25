@@ -6,12 +6,12 @@ import { clsx } from 'clsx'
 
 import styles from './styles.module.css'
 
-interface AppLinkProps {
+interface Props {
 	href: string
 	children: React.ReactNode
 }
 
-export const AppLink = ({ href, children }: AppLinkProps) => {
+export const AppLink = ({ href, children }: Props) => {
 	const pathname = usePathname()
 
 	const isActive = pathname === href

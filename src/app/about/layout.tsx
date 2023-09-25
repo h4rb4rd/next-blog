@@ -3,11 +3,11 @@ import { Routes } from '@/routes'
 
 import styles from './styles.module.css'
 
-interface AboutLayoutProps {
+interface Props {
 	children: React.ReactNode
 }
 
-export default function AboutLayout({ children }: AboutLayoutProps) {
+export default function AboutLayout({ children }: Props) {
 	return (
 		<div className={styles.layout}>
 			<aside className={styles.sidebar}>

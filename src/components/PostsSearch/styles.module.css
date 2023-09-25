@@ -1,0 +1,30 @@
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	margin-bottom: 15px;
+}
+
+.input {
+	border: 2px solid var(--sibebar-color);
+	border-radius: var(--border-radius);
+	padding: 8px;
+}
+
+.input:focus {
+	border-color: var(--dark-color);
+}
+
+.button {
+	cursor: pointer;
+	border: 2px solid var(--sibebar-color);
+	background-color: var(--sibebar-color);
+	border-radius: var(--border-radius);
+	color: var(--light-color);
+	padding: 8px;
+}
+
+.button:hover {
+	opacity: 0.8;
+}

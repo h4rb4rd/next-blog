@@ -1,0 +1,13 @@
+.header {
+	height: var(--header-height);
+	background-color: var(--dark-color);
+	font: var(--font-21);
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	gap: 40px;
+}

@@ -1,0 +1,92 @@
+:root {
+	/* font */
+	--font-family-main: Roboto, sans-serif;
+
+	/* 16 */
+	--font-size-16: 16px;
+	--font-line-24: 24px;
+	--font-16: var(--font-size-16) / var(--font-line-24) var(--font-family-main);
+
+	/* 18 */
+	--font-size-18: 18px;
+	--font-line-26: 26px;
+	--font-18: var(--font-size-18) / var(--font-line-26) var(--font-family-main);
+
+	/* 21 */
+	--font-size-21: 21px;
+	--font-line-29: 29px;
+	--font-21: var(--font-size-21) / var(--font-line-29) var(--font-family-main);
+
+	/*  24 */
+	--font-size-24: 24px;
+	--font-line-32: 32px;
+	--font-24: var(--font-size-24) / var(--font-line-32) var(--font-family-main);
+
+	/* 32 */
+	--font-size-32: 32px;
+	--font-line-40: 40px;
+	--font-32: var(--font-size-32) / var(--font-line-40) var(--font-family-main);
+
+	/* colors */
+	--dark-color: #212121;
+	--light-color: #fafafa;
+	--sibebar-color: #757575;
+	--link-active-color: #fdd835;
+
+	/* sizes */
+	--header-height: 80px;
+	--footer-height: 50px;
+	--border-radius: 4px;
+	--sidebar-width: 180px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 10px;
+	height: 7px;
+}
+
+*::-webkit-scrollbar-corner {
+	display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: var(--sibebar-color);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background-color: var(--sibebar-color);
+}
+
+html,
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	color: var(--light-color);
+	font: var(--font-18);
+}
+
+li {
+	list-style: none;
+}
+
+.main {
+	display: flex;
+	flex: 1 1 auto;
+	height: calc(100vh - var(--footer-height) - var(--header-height));
+	color: var(--dark-color);
+}

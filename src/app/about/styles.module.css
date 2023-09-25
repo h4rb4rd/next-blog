@@ -1,0 +1,30 @@
+.layout {
+	display: grid;
+	grid-template-areas: 'sidebar content';
+	grid-template-columns: min-content 1fr;
+	width: 100%;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	height: calc(100vh - var(--footer-height) - var(--header-height));
+	width: var(--sidebar-width);
+	color: var(--light-color);
+	background-color: var(--sibebar-color);
+	padding: 20px;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.content {
+	grid-area: content;
+	overflow-y: auto;
+}

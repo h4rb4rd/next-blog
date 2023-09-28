@@ -1,1 +1,3 @@
-export const POSTS_URL = 'https://jsonplaceholder.typicode.com/posts'
+const API_KEY = process.env.SECRET_API_KEY
+
+export const POSTS_URL = '/api/posts'

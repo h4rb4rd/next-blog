@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { Providers } from '@/providers'
 
 import './globals.css'
 
@@ -18,9 +19,11 @@ export default function RootLayout({ children }: Props) {
 	return (
 		<html lang='en'>
 			<body>
-				<Header />
-				<main className='main'>{children}</main>
-				<Footer />
+				<Providers>
+					<Header />
+					<main className='main'>{children}</main>
+					<Footer />
+				</Providers>
 			</body>
 		</html>
 	)

@@ -2,6 +2,11 @@
 	/* font */
 	--font-family-main: Roboto, sans-serif;
 
+	/*  */
+	--font-size-14: 14px;
+	--font-line-22: 22px;
+	--font-14: var(--font-size-14) / var(--font-line-22) var(--font-family-main);
+
 	/* 16 */
 	--font-size-16: 16px;
 	--font-line-24: 24px;
